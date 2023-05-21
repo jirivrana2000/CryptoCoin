@@ -1,0 +1,31 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+div {
+    xborder: 3px solid blue;
+}
+
+
+.footerContainer {
+    height: 100px;
+    background: rgb(144,33,186);
+    background: linear-gradient(90deg, rgba(144,33,186,1) 14%, rgba(248,62,255,1) 100%);
+    display: flex;
+    justify-content: space-around;
+}
+
+.footerDiv {
+    width: 250px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a {
+    color: white;
+    font-size: 30px;
+    margin: 15px;
+}
