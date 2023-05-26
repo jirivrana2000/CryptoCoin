@@ -3,19 +3,14 @@
     padding: 0px;
     box-sizing: border-box;
 }
-div {
-    xborder: 3px solid blue;
-}
-
-
 .footerContainer {
-    height: 100px;
+    min-width: 280px;
+    height: 100px; 
     background: rgb(144,33,186);
     background: linear-gradient(90deg, rgba(144,33,186,1) 14%, rgba(248,62,255,1) 100%);
     display: flex;
     justify-content: space-around;
 }
-
 .footerDiv {
     width: 250px;
     text-align: center;
@@ -23,9 +18,19 @@ div {
     align-items: center;
     justify-content: center;
 }
-
 a {
     color: white;
     font-size: 30px;
     margin: 15px;
+}
+
+@media (max-width: 600px) {
+    .footerContainer {
+        height: 200px;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .footerContainer {
+        flex-direction: column;
+    }
 }

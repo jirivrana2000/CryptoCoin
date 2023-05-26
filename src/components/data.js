@@ -1,5 +1,4 @@
-
-
+//Pro použití pouze když je problém s api a je potřeba pracovat se styly Exchange.css.
 const data = [ 
     {
         id:"bitcoin",

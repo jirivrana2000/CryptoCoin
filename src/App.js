@@ -1,5 +1,5 @@
-import Exchange from "./components/Exchange"
 import Main from "./components/Main";
+import Exchange from "./components/Exchange"
 import Info from "./components/Info"
 import Login from "./components/Login"
 import Footer from "./components/Footer"

@@ -3,19 +3,18 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
     font-family: 'Ubuntu', sans-serif;
     letter-spacing: 1px;
     color: white;
 }
-
 .container {
+    min-width: 280px;
     height: 120vh;
+    min-width: 280px;
     background: rgb(96,0,255);
     background: linear-gradient(180deg, rgba(96,0,255,1) 0%, rgba(11,11,14,1) 85%);
 }
-
 .header {
     height: 100px;
     display: flex;
@@ -23,26 +22,23 @@ body {
     margin: 0 auto;
     max-width: 1500px;
 }
-
 .logo {
     text-decoration: none;
-    font-size: 32px;
+    font-size: 40px;
     margin: 0px 30px;
     color: white;
 }
-
 ul {
+    min-width: 280px;
     display: flex;
     margin: 0px auto;
     list-style-type: none;
 }
-
 li {
     text-decoration: none;
-    font-size: 26px;
+    font-size: 30px;
     margin: 0px 40px;
 }
-
 .main {
     height: calc(100vh - 100px);
     display: flex;
@@ -50,28 +46,135 @@ li {
     justify-content: center;
     text-align: center;
 }
-
 .firstP {
     font-size: 7vh;
     position: relative;
     margin-top: -5vh;
 }
-
 h1 {
     font-size: 12vh;
     padding: 30px;
     padding-bottom: 50px;
     position: relative;
 }
-
 .secondP {
     font-size: 6vh;
     position: relative;
 }
-
 .backgroundImg {
     width: 100vw;
     position: absolute;
     opacity: 0.3;
     margin-top: -10vh;
+}
+
+@media (max-width: 960px) {
+    .header {
+        height: 180px;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .logo {
+        font-size: 8vw;
+    }
+    li {
+        font-size: 4vw;
+    }.main {
+        height: calc(100vh - 180px);
+    }
+}
+
+@media (max-width: 860px) {
+    .firstP {
+        font-size: 4vh;
+    }
+    h1 {
+        font-size: 6vh;
+    }
+    .secondP {
+        font-size: 3.2vh;
+    }
+}
+
+@media (max-width: 650px) {
+    .header {
+        height: 300px;
+    }
+    .logo {
+        font-size: 14vw;
+    }
+    ul {
+        width: 100vw;
+        margin: 0px;
+    }
+    li {
+        font-size: 5vw;
+        padding: 10px;
+        text-align: center;
+        margin: 10px;
+        width: 25vw;
+    }
+    .main {
+        height: calc(100vh - 300px);
+    }
+}
+
+@media (max-width: 470px) {
+    .firstP {
+        font-size: 3.2vh;
+    }
+    h1 {
+        font-size: 5.2vh;
+    }
+    .secondP {
+        font-size: 2.8vh;
+    }
+}
+
+@media (max-width: 420px) {
+    li {
+        font-size: 4.5vw;
+    }
+    .header {
+        height: 250px;
+    }
+    .main {
+        height: calc(100vh - 250px);
+    }
+    .firstP {
+        font-size: 32px;
+    }
+    h1 {
+        font-size: 50px;
+    }
+    .secondP {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 362px) {
+    .logo {
+        font-size: 40px;
+    }
+    ul {
+        margin: 0px;
+        max-width: 280px;
+    }
+    li {
+        font-size: 12px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .firstP {
+        font-size: 26px;
+        width: 280px;
+    }
+    h1 {
+        font-size: 40px;
+        width: 280px;
+    }
+    .secondP {
+        font-size: 20px;
+        width: 280px;
+    }
 }

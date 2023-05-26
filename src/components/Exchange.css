@@ -3,17 +3,13 @@
     padding: 0px;
     box-sizing: border-box;
 }
-
 .cryptoContainer {
     font-family: 'Space Grotesk', sans-serif;
     color: white;
-    xxborder: 3px solid red;
-    min-width: 630px;
-    max-width: 1092px;
+    width: clamp(630px, 1100px, 85vw);
     margin-left: auto;
     margin-right: auto;
 }
-
 .coinHeader {
     background: rgb(144,33,186);
     background: linear-gradient(90deg, rgba(144,33,186,1) 14%, rgba(248,62,255,1) 52%, rgba(96,0,255,1) 100%);
@@ -21,8 +17,6 @@
     display: flex;
     align-items: center;
     height: 80px;
-    min-width: 630px;
-    max-width: 1092px;
     margin: 0px auto;
     padding: 0px 10px;
     padding-left: 80px;
@@ -32,44 +26,59 @@
     text-align: center;
     font-size: 22px;
 }
-
 .pricelist {
     height: 60vh;
     overflow-y: auto;
-    xxborder: 3px solid red;
     border-radius: 0px 0px 10px 10px;
     margin-bottom: 100px;
 }
-
 .coinContainer {
     border-bottom: 1px solid white;
     background-color: rgb(37, 37, 37);
     display: flex;
     align-items: center;
     height: 100px;
-    min-width: 630px;
-    max-width: 1092px;
     margin: 0px auto;
     padding: 0px 10px;
 }
-
 .coinPhoto {
     width: 70px;
     padding: 5px;
     height: auto;
 }
-
 .coinContainer h2,
 .coinContainer p {
     width: 200px;
     text-align: center;
     font-size: 18px;  
 }
-
 .green {
     color: rgb(40, 207, 40);
 }
-
 .red {
     color: rgb(244, 42, 42);
+}
+
+@media (max-width: 750px) {
+    .responsibilityContainer {
+        min-width: 280px;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        overflow-x: scroll;
+        width: 85vw;
+    }
+    .cryptoContainer {
+        height: 66vh;
+    }
+    .coinHeader {
+        border-radius: 0px;
+    }
+    .pricelist {
+        border-radius: 0px;
+        height: 70vh;
+    }
+    .pricelist {
+        height: 60vh;
+    }
 }

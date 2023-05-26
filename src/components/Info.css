@@ -3,55 +3,103 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
     font-family: 'Ubuntu', sans-serif;
     letter-spacing: 1px;
     color: white;
 }
-
 .infoContainer {
-    xborder: 3px solid gold;
+    min-width: 280px;
     padding-top: 15vh;
     padding-bottom: 15vh;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-items: center;
     background: rgb(0,0,0);
     background: linear-gradient(180deg, rgba(11,11,14,1) 0%, rgba(96,0,255,1) 70%);
 }
-
 .infoContainerPart {
     background-color: rgba(0, 0, 0, 0.3);
     border-radius: 10px;
-    width: 250px;
-    height: 350px;
-    margin: 30px;
+    width: 300px;
+    height: 430px;
     padding: 15px;
     line-height: 28px;
     display: flex;
     flex-direction: column;
+    text-align: center;
 }
-
 h4 {
-    font-size: 26px;
+    font-size: 32px;
     padding-bottom: 20px;
     padding-top: 20px;
     text-align: center;
-    font-weight: 300;
+    font-weight: 400;
 }
-
 .infoContainerPart p {
-    font-size: 18px;
+    font-size: 28px;
+    line-height: 35px;
     font-weight: 300;
     padding-top: 15px;
 }
-
 .infoContainerPart img {
-    max-height: 130px;
-    max-width: 200px;
+    max-height: 170px;
+    max-width: 270px;
     margin-top: auto;
     margin-left: auto;
     margin-right: auto;
+}
+
+@media (max-width: 1650px) {
+    .infoContainerPart {
+        width: 230px;
+        height: 350px;
+    }
+    h4 {
+        font-size: 26px;
+        font-weight: 300;
+    }
+    .infoContainerPart p {
+        font-size: 18px;
+        line-height: 23px;
+    }
+    .infoContainerPart img {
+        max-height: 130px;
+        max-width: 200px;
+    }
+}
+
+@media (max-width: 1160px) {
+    .infoContainer {
+        padding-left: 20px;
+        padding-right: 20px;
+        grid-template-columns: auto auto;
+        gap: 50px;
+    }
+    .infoContainerPart {
+        min-width: 30vw;
+        max-width: 40vw;
+        padding: 10px;
+    }
+    h4 {
+        font-size: 28px;
+    }
+    .infoContainerPart p {
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .infoContainerPart img {
+        max-height: 150px;
+        max-width: 220px;
+    }
+}
+
+@media (max-width: 600px) {
+    .infoContainer {
+        grid-template-columns: auto;
+        align-items: stretch;
+    }
+    .infoContainerPart {
+        min-width: 240px;
+    }
 }
