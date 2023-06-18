@@ -7,7 +7,7 @@ const data = [
     {
         id: 1,
         header: "Nabij a investuj",
-        info: "Nabít účet můžete nejen pomocí karty ale i Apple Pay a Google Pay.",
+        info: "Nabít účet můžete nejen pomocí karty, ale i Apple Pay a Google Pay.",
         img: img2
     },
     {
@@ -25,7 +25,7 @@ const data = [
     {
         id: 4,
         header: "Nově i NFT!",
-        info: "Jsme první Česká burza co umožňuje nákup NFT.",
+        info: "Jsme první česká burza co umožňuje nákup NFT.",
         img: img5
     }
 ]
